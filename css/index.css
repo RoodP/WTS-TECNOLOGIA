@@ -1,11 +1,11 @@
 body{
-    margin: 0;
     font-family: sans-serif;
-    background-color: #343541;
-    color: #FFF;
     display: flex;
     flex-direction: row;
+    min-height: 100vh;
 }
+
+
 
 .logo-img{
     width: 38px;
@@ -29,10 +29,11 @@ body{
     flex-direction: column;
     align-items: flex-start;
     width: 240px;
-    height: 800px;
     padding: 40px 10px 30px 10px;
     border-right: 1px solid #2f3336;
     transition: 0.35s;
+    background-color: #202123;
+    min-height: 100vh;
 }
 
 .sidebar-header{
@@ -80,9 +81,10 @@ body{
 
 .sidebar > nav{
     flex: 1 1 auto;
-    display: felx;
+    /* display: felx; */
     flex-direction: column;
     width: 100%;
+    min-height: 100%;
 }
 
 .main{
@@ -101,6 +103,10 @@ body{
         width: 50px;
     }
     .sidebar button > span > span{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .sidebar-header span > h4{
         opacity: 0;
         visibility: hidden;
     }
@@ -175,4 +181,13 @@ body{
         margin-left: 6px;
     }
 }
+
+
+#grafico-3 {
+    height: 400px;
+    width:500px;
+    margin-top: 2em;
+    margin-left: 30px;
+}
+
 
