@@ -42,7 +42,7 @@
                         <span>Cadastro de cliente</span>
                     </span>
                 </button>
-                <button>
+                <button data-bs-toggle="modal" data-bs-target="#modal_mensagens">
                     <span>
                         <i class="material-symbols-outlined">email</i>
                         <span>Mensagens</span>
@@ -69,43 +69,42 @@
                     <i class="material-symbols-outlined">close</i>
                 </span>
             </button>
-
             <button>
-            <span>
-                <i class="material-symbols-outlined">home</i>
-                <span>Inicio</span>
-            </span>
-        </button>
-        <button>
-            <span>
-                <i class="material-symbols-outlined">attach_money</i>
-                <span>Vendas</span>
-            </span>
-        </button>
-        <button>
-            <span>
-                <i class="material-symbols-outlined">tag</i>
-                <span>Cadastro de mercadoria</span>
-            </span>
-        </button>
-        <button>
-            <span>
-                <i class="material-symbols-outlined">how_to_reg</i>
-                <span>Cadastro de cliente</span>
-            </span>
-        </button>
-        <button>
-            <span>
-                <i class="material-symbols-outlined">email</i>
-                <span>Mensagens</span>
-            </span>
-        </button>
-        <button>
-            <span>
-                <i class="material-symbols-outlined">person</i>
-                <span>Profile</span>
-            </span>
-        </button>
+                <span>
+                    <i class="material-symbols-outlined">home</i>
+                    <span>Inicio</span>
+                </span>
+            </button>
+            <button>
+                <span>
+                    <i class="material-symbols-outlined">attach_money</i>
+                    <span>Vendas</span>
+                </span>
+            </button>
+            <button>
+                <span>
+                    <i class="material-symbols-outlined">tag</i>
+                    <span>Cadastro de mercadoria</span>
+                </span>
+            </button>
+            <button>
+                <span>
+                    <i class="material-symbols-outlined">how_to_reg</i>
+                    <span>Cadastro de cliente</span>
+                </span>
+            </button>
+            <button>
+                <span>
+                    <i class="material-symbols-outlined">email</i>
+                    <span>Mensagens</span>
+                </span>
+            </button>
+            <button>
+                <span>
+                    <i class="material-symbols-outlined">person</i>
+                    <span>Profile</span>
+                </span>
+            </button>
         </nav>
 
     <div class="modal fade" id="modal_cadastro_cliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -138,27 +137,76 @@
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="modal_vendas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content"   style="background-color:#202123;">
+
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">VENDAS</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
                 <div class="modal-body">
-                    <div class="col-sm-2 col-md-3  col-xs-12">
-                        <label class="control-label" for="tipo_edit">Produto:</label>
-                        <select id="tipo_edit" class="form-control" style="width: 535px;" ></select>
+                <div class="row">
+                    <div class="col-4">
+                        <label class="form-label" for="#">Cliente:</label>
+                        <select id="#" class="form-control" required></select>
                     </div>
-                    <div class="col-sm-2 col-md-3 col-xs-12">
-                        <label class="control-label" for="tipo_edit">Valor:</label>
-                        <input id="tipo_edit" class="form-control" style="width: 535px;" ></input>
+                    <div class="col-4">
+                        <label class="form-label" for="#">Produtos:</label>
+                        <select id="#" class="form-control"></select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label class="form-label" for="#">Valor:</label>
+                        <input id="#" class="form-control"></input>
+                    </div>
+                </div><br>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" onclick="salvar()" class="btn btn-primary">Salvar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_mensagens" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content"   style="background-color:#202123;">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">MANDE UMA MENSSAGEM PARA SEU CLIENTE</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label" for="#">Cliente:*</label>
+                            <select id="#" class="form-control"></select>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="form-label" for="#">Valor:</label>
+                            <select id="#" class="form-control"></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label class="form-label" for="#">Texto:*</label>
+                            <textarea id="#" class="form-control"></textarea>
+                        </div>
                     </div><br>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                         <button type="button" onclick="salvar()" class="btn btn-primary">Salvar</button>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
