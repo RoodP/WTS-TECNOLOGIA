@@ -64,3 +64,15 @@ function cadastro_cliente(){
 
 }
 
+function mostrarCampos() {
+  var clienteSelecionado = document.getElementById("nome_vendas").value;
+  var camposExtras = document.getElementById("camposExtras");
+
+  if (clienteSelecionado === "Rodrigo" || clienteSelecionado === "Miguel") {
+      camposExtras.style.display = "block";
+  } else {
+      camposExtras.style.display = "none";
+  }
+}
+
+

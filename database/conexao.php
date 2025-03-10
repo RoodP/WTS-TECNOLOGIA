@@ -8,7 +8,7 @@
     $db = 'public';
 
     $conexao = NEW mysqli($servername,$username,$password,$db);
-
+    
     if($conexao->connect_errno){
         die("Erro na conexão com o banco de dados" . $conexao->connect_errno);    
         // return $conexao;
